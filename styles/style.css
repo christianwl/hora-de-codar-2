@@ -1,0 +1,29 @@
+body {
+    background-color: #000000;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    font-family: var(--font-text);
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    padding-block: var(--default-padding);
+    border-bottom: 2px solid var(--border-color);
+
+    text-align: center;
+}
+
+footer {
+    padding-block: var(--default-padding);
+    border-top: 1px solid var(--border-color);
+    
+    text-align: center;
+}

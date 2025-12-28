@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    /*Colors*/
+    --border-color: #00FF00;
+    --text-color: #61cf5a;
+
+    /*Fonts*/
+    --font-text: "JetBrains Mono", monospace;
+
+    /*Rem Sizes*/
+    --default-padding: 1.8rem;
+}

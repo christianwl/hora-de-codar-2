@@ -34,3 +34,11 @@ O projeto executa as seguintes funções:
 * JavaScript (Lógica principal)
 * HTML5 (Estrutura da interface)
 * CSS3 (Estilização em progresso)
+
+## Autor
+
+<div>
+  <a href="https://github.com/christianwl">
+    <img src="https://contrib.rocks/image?repo=christianwl/hora-de-codar-2" alt="foto do(s) autor(es)"/>
+  </a>
+</div>

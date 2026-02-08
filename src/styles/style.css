@@ -1,3 +1,6 @@
+@import 'reset.css';
+@import 'vars.css';
+
 body {
     background-color: #000000;
 
@@ -10,15 +13,32 @@ body {
     color: var(--text-color);
 }
 
-main {
-    flex: 1;
-}
-
 header {
     padding-block: var(--default-padding);
     border-bottom: 2px solid var(--border-color);
 
     text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+main button {
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 25px;
+    padding: 16px;
+    border-color: var(--border-color);
+
+    cursor: pointer;
+}
+
+main button:hover{
+    background-color: #788677;
 }
 
 footer {

@@ -5,15 +5,12 @@ exiba os números informados e escreva a média aritmética desses valores lidos
 */
 
 import { getUserNumbers } from "../utils/array-input-handler.js";
+import { calcListMean } from "../utils/math-utils.js";
+
 
 export function showExercise05() {
   let numberList = getUserNumbers(6);
   let mean = calcListMean(numberList);
 
   alert(`Os valores informados são ${numberList.join(", ")} e a média é: ${mean}`)
-}
-
-function calcListMean(list = []) {
-  let sumList = list.reduce((result, value) => result + value, 0);
-  return sumList / list.length;
 }

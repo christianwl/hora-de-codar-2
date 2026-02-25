@@ -121,7 +121,7 @@ export function receberNumeroEspecifico(textoPrompt, arrayNumeros = []){
 }
 
 
-export function receberValorPositivo(textoPrompt, textoErroOpcional = ""){
+export function receberValorPositivo(textoPrompt, { podeSerZero = false, textoErroOpcional = ""} = {}){
     let numero;
     let positivo;
 
@@ -129,8 +129,9 @@ export function receberValorPositivo(textoPrompt, textoErroOpcional = ""){
         
         numero = receberValorNumerico(textoPrompt);
         if(verificarValorNull(numero)) return null;
+        
+        positivo = podeSerZero ? numero >= 0 : numero > 0;
 
-        positivo = Math.sign(numero) === 1;
         if(!positivo) alert(textoErroOpcional || "Você digitou um número que não é positivo, tente novamente");
 
     } while(!positivo)

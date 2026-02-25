@@ -18,33 +18,3 @@ function sumValuesUnderLimit(valuesList = [], limit){
     let valuesAllowed = valuesList.filter(value => value < limit);
     return valuesAllowed.reduce((result, value) => result + value, 0);
 }
-
-SomarNumeros(6);
-
-function SomarNumeros(quantidade) {
-  var i = 0;
-  var resultadoSoma = 0;
-  var numerosTexto = `os números digitados foram `;
-  do {
-    var numeroSoma = parseInt(
-      prompt(
-        `Digite o º${i + 1} número: \n\nOBS: Os números devem ser menor que 72!`,
-      ),
-    );
-    if (numeroSoma < 72) {
-      i++;
-      resultadoSoma += numeroSoma;
-      numerosTexto += numeroSoma += i < quantidade ? ", " : "";
-    } else if (numeroSoma >= 72) {
-      alert(
-        `O número ${numerosTexto} é maior que 72! Por favor digite novamente outro número`,
-      );
-    } else {
-      ApresentarValorIncorreto();
-    }
-  } while (i < quantidade);
-
-  ApresentarNaTela(
-    `O resultado da soma dos números é ${resultadoSoma} e ${numerosTexto}.`,
-  );
-}

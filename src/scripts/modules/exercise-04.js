@@ -1,10 +1,12 @@
+import { getDistinctUserNumbers } from "../utils/array-input-handler.js";
+
 // Atividade 4
 /*
 Faça um programa que leia 3 valores informados pelo usuário 
 (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores.
 */
 
-export function showExercice04() {
+export function showExercise04() {
   const qnt = 3;
   let numberList = getDistinctUserNumbers(qnt);
 

@@ -6,7 +6,7 @@ Então escreva em tela o maior deles.
 
 import { getDistinctUserNumbers } from "../utils/array-input-handler.js";
 
-export function showExercice01() {
+export function showExercise01() {
   let numberList = getDistinctUserNumbers();
   const maxNumber = Math.max(...numberList);
 

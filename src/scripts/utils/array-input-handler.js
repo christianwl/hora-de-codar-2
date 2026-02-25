@@ -2,9 +2,7 @@ import { receberValorNumerico } from "./prompt-manager";
 
 /**
  * Collects a list of distinct numbers from the user via prompt.
- * * @param {number} qnt - The total amount of unique numbers to be collected. 
- * 
- * Default qnt value = 2
+ * @param {number} qnt - The total amount of unique numbers to be collected. **Default: 2**
  * @returns {number[]} An array containing the distinct numbers provided by the user.
  */
 export function getDistinctUserNumbers(qnt = 2) {

@@ -40,37 +40,3 @@ function collectNumbersWithinLimit(
 function getPassStatus(mean, minValue = 5) {
   return mean > minValue ? "Você passou no teste" : "Tente novamente";
 }
-
-CalcularMediaDez(4);
-
-function CalcularMediaDez(quantidade) {
-  var media = 0;
-  var indice = 0;
-  var numeros = [];
-
-  do {
-    var numeroLocal = prompt(
-      `Digite o º${indice + 1} número para calcular a média: \n\nOBS: O número deve ser maior que 0 e menor que 10!`,
-    );
-
-    if (isNaN(numeroLocal)) {
-      ApresentarValorIncorreto();
-    } else if (numeroLocal >= 0 && numeroLocal <= 10) {
-      numeros.push(numeroLocal);
-      indice++;
-    } else {
-      var zeroOuDez = numeroLocal < 0 ? "menor que 0" : "maior que 10";
-      alert(
-        `O número ${numeroLocal} é ${zeroOuDez}! Por favor, digite outro número.`,
-      );
-    }
-  } while (indice < quantidade);
-
-  media = CalcularMedia(numeros);
-
-  if (media > 5) {
-    ApresentarNaTela("Você passou no teste!");
-  } else {
-    ApresentarNaTela("Tente novamente...");
-  }
-}

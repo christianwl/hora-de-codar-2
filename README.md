@@ -30,8 +30,15 @@ O projeto executa as seguintes funções:
 * **Interface:** Estilização inicial para transformar os scripts de console em uma interface amigável para o usuário final.
 * **Apresentação:** Organização do código para facilitar a demonstração visual das funções criadas.
 
+### Atualização em 2026 (Refatoração e Engenharia de Software) 
+* **Modularização (ES6 Modules):** Separação de responsabilidades com a divisão do código em módulos (`import/export`), facilitando a manutenção.
+* **Clean Code & Refatoração:** Aplicação de métodos modernos de array como `.reduce()`, `.filter()`, `.sort()` e `.join()` para substituir loops complexos.
+* **Arquitetura Reutilizável:** Criação de utilitários (`utils`) para manipulação de inputs e cálculos matemáticos, evitando repetição de código.
+* **Documentação JSDoc:** Implementação de documentação técnica em inglês para funções utilitárias, descrevendo parâmetros e retornos.
+* **Performance:** Substituição da função `eval()` por mapeamento de funções
+
 ## 🛠️ Tecnologias
-* JavaScript (Lógica principal)
+* JavaScript (ES6+) (Módulos, Desestruturação, Spread Operator e Arrow Functions)
 * HTML5 (Estrutura da interface)
 * CSS3 (Estilização em progresso)
 

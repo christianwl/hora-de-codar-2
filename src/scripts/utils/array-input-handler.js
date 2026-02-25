@@ -32,11 +32,11 @@ export function getDistinctUserNumbers(qnt = 2) {
  * @param {number} qnt - The total amount of numbers to be collected. **Default: 2**
  * @returns {number[]} An array containing the numbers provided by the user.
  */
-export function getUserNumbers(qnt = 2) {
+export function getUserNumbers(qnt = 2,) {
   let list = [];
   for (let i = 0; i < qnt; i++) {
     let userNumber = receberValorNumerico(
-      `Digite o º${i + 1} número para calcular a média:`,
+      `Digite o º${i + 1} número para calcular: `,
     );
     list.push(userNumber);
   }

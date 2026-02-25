@@ -6,6 +6,8 @@ mensagem "Você passou no teste". Em qualquer outra situação, ele receberá um
 */
 
 import { calcListMean } from "../utils/math-utils.js";
+import { receberValorPositivo } from "../utils/prompt-manager.js";
+
 
 export function showExercise08() {
   let numberList = collectNumbersWithinLimit(4);
